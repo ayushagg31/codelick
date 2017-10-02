@@ -1,74 +1,52 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <iostream>
+//author @ Ayush Aggarwal
+
+#include <bits/stdc++.h>
 using namespace std;
 
-struct tree
+struct node
 {
 	int data;
-	struct tree *left,*right;
+	node *left,*right;
 };
 
-//Implement using linked list
-struct stk
+struct node* newNode(int data)
 {
-	int content;
-	struct stk *next;
-};
-
-struct tree *Newnode(int kata)
-{
-	struct tree *node = (struct tree*)malloc(sizeof(struct tree));
-	node->data = kata;
-	node->left = node->right = NULL;
-	return node; 
+    node *temp = new node;
+    temp->data = data;
+    temp->left = NULL;
+    temp->right = NULL;
+    return temp;
 }
 
-void stack_push(struct stk **head_ref,int data)
+void inorder(node *root)
 {
-	struct stk *new_node = (struct stk*)malloc(sizeof(struct stk));
-	new_node->content = data;
-	new_node->next = *head_ref;
-	*head_ref = new_node;
-}
-
-void stack_pop(struct stk **head_ref)
-{	
-	if(*head_ref == NULL)
-	{
-		cout<<"stack is empty";
+	if(root==NULL)
 		return;
-	}
-	struct stk *del_node = *head_ref;
-	int saver = del_node->content;
-	cout<<saver<<" ";
-	*head_ref = del_node->next;
-}
-
-void traversal(struct tree *root)
-{
-	struct stk *head = (struct stk*)malloc(sizeof(struct stk));
-	head->content = root->data;
-	head->next = NULL;
-	while(head !=NULL)
-	{	
-		if(root->left != NULL)
+	stack <node*> s;
+	while(true)
+	{
+		while(root!=NULL)
 		{
+			s.push(root);
 			root = root->left;
 		}
-		else
-		{	
-			stack_pop(&head);
-
-		}
+		if(s.empty())
+			return;
+		node *temp = s.top();
+		s.pop();
+		cout<<temp->data<<" ";
+		root = temp->right;
 	}
 }
 
 int main()
 {
-	struct tree *root = Newnode(1);
-	root->right = Newnode(3);
-	root->left = Newnode(2);
-	root->left->right = Newnode(5);
-	root->left->left = Newnode(4);
+	struct node *root = newNode(1);
+    root->left = newNode(2);
+    root->right = newNode(3);
+    root->left->left = newNode(4);
+    root->left->right = newNode(5);
+    inorder(root);
+	return 0;
 }
+
