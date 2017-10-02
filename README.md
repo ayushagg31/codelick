@@ -7,4 +7,4 @@ All code is written in C/C++
 Checkout the [wiki](https://github.com/ayushagg31/codelick/wiki) for complete list of Data Structure and Algorithms
 
 
-**still contributing**
+**still contributing...**
