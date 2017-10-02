@@ -1,7 +1,5 @@
 //author @ Ayush Aggarwal
-// iterative one
-//calculate the size of binary tree
-// size of binary tree = no of nodes in a binary tree
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -20,24 +18,25 @@ struct node* newNode(int data)
     return temp;
 }
 
-int calc_size(struct node *root)
+void preorder(node *root)
 {
-    int size = 0;
-    if(root==NULL)
-        return 0;
-    queue <node*> q;
-    q.push(root);
-    while(!q.empty())
+    if(root == NULL)
+        return;
+    stack <node*> s;
+    while(true)
     {
-        struct node *temp = q.front();
-        size++;
-        q.pop();
-        if(temp->left)
-            q.push(temp->left);
-        if(temp->right)
-            q.push(temp->right);
+        while(root !=NULL)
+        {
+            cout<<root->data<<" ";
+            s.push(root);
+            root = root->left;
+        }
+        if(s.empty())
+            return;
+        root = s.top();
+        s.pop();
+        root = root->right;
     }
-    return size;
 }
 
 int main()
@@ -47,6 +46,6 @@ int main()
     root->right = newNode(3);
     root->left->left = newNode(4);
     root->left->right = newNode(5);
-    cout<<calc_size(root);
+    preorder(root);
 	return 0;
 }
