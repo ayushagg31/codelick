@@ -1,5 +1,4 @@
 //author @ Ayush Aggarwal
-//Root to leaf sum of a binary tree
 #include <bits/stdc++.h>
 using namespace std;
 
