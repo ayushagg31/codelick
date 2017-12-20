@@ -3,7 +3,7 @@ Repository for my code implementation of different `Data Structure and Algorithm
 
 All code is written in `C/C++`.
 - - - -
-> **Any code of your own that you haven't looked at for six or more months might as well have been written by someone else.** - Eagleson's law 
+> **Algorithm** - Word used by programmers when they do not want to explain what they did. 
 - - - -
 
 # codelick wiki
