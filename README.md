@@ -12,6 +12,8 @@ Checkout the [codelick-wiki](https://github.com/ayushagg31/codelick/wiki) for co
 
 `Any suggestions are welcome.`
 
+![picture alt](https://qph.ec.quoracdn.net/main-qimg-024a68d35ed5a3a82eb88293f1f06f10 "Awesome Comics")
+
 
 # License
 We believe in freedom and improvement. [GNU General Public License v3.0](https://github.com/ayushagg31/codelick/blob/master/LICENSE)
