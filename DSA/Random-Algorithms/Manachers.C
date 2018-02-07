@@ -1,6 +1,6 @@
 /*author @ Ayush Aggarwal
-***https://www.hackerearth.com/practice/algorithms/string-algorithm/manachars-algorithm/tutorial/
-***https://www.youtube.com/watch?v=kbUiR5YWUpQ&t=638s
+*** Manacher's Algorithm
+*** Longest palindromic substring
 */
 #include <bits/stdc++.h>
 using namespace std;
