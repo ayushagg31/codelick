@@ -1,4 +1,4 @@
-author= Kumar Jatin
+//author= Kumar Jatin
 #include<stdio.h>
 #include<stdlib.h>
 //using namespace std;
