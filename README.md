@@ -1,5 +1,4 @@
-# codelick
-**Alive**
+# codelick </t> 
 Repository for my code implementation of different `Data Structure and Algorithmic` Problems.
 
 All code is written in `C/C++`.
