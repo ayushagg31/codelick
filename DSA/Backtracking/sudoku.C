@@ -1,3 +1,5 @@
+// author @Ayush Aggarwal
+// Source: GeeksforGeeks
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -40,7 +42,7 @@ bool Solving_sudoku()
 	if(!Find_Unassigned(row,col))
 		return true;	//  sudoku is finally solved
 	// Now fill the current unassigned position in sudoku (row, col) with any digit (0-9)
-	// check the complete row
+	// Now check the complete row
 	cout<<row<<" "<<col<<endl;
 	for(int i=1;i<=9;i++)
 	{
