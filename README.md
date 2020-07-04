@@ -12,7 +12,7 @@ Checkout the [codelick-wiki](https://github.com/ayushagg31/codelick/wiki) for co
 
 `Any suggestions are welcome.`
 
-![picture alt](https://qph.ec.quoracdn.net/main-qimg-024a68d35ed5a3a82eb88293f1f06f10 "Awesome Comics")
+![xkcd comic](https://imgs.xkcd.com/comics/travelling_salesman_problem.png)
 
 
 # License
