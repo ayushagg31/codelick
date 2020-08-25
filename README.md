@@ -19,4 +19,4 @@ Checkout the [codelick-wiki](https://github.com/ayushagg31/codelick/wiki) for co
 We believe in freedom and improvement. [GNU General Public License v3.0](https://github.com/ayushagg31/codelick/blob/master/LICENSE)
 <br/>
 
-**still contributing...**
+
